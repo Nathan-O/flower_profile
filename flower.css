@@ -1,0 +1,19 @@
+#prettyFlowerTime {
+	height: 350px;
+	width: 350px;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	height: 350px;
+	width: 350px; 
+}
+
+ul {
+	float: right;
+	margin-right: 95px;
+	margin-top: 45px;
+}

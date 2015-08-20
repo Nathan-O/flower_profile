@@ -1,0 +1,85 @@
+<!--
+////////////////////////////////////////////////////////////
+
+							Name
+						Page - HTML
+
+////////////////////////////////////////////////////////////
+-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title></title>
+
+		<link rel="stylesheet" href="flower.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+
+		<script src="flower.js"></script>						
+	</head>
+
+	<body>
+		<header>
+			<h1> Pretty Flower Time!!! </h1>
+		</header>
+		<hr>
+		<div id='prettyFlowerTime-placeholder'>
+			
+		</div>
+		<hr>
+
+		<!-- Content -->
+
+		<footer>
+		</footer>
+
+		<script type="text/template" id="flower-template">
+	<div class="prettyFlowerTime">	
+    <img src=<%= urlPic %> /> 
+    <ul>
+    	<li> <strong>Name: </strong> <%= name %> </li>
+    	<br>
+    	<li> <strong>Color: </strong> <%= color %> </li>
+    	<br>
+    	<li> <strong>Petals: </strong> <%= petals %> </li>
+    	<br>
+    	<li> <strong>Leaves: </strong> <%= leafCount %> </li>
+    	<br>
+    	<li> <strong>Origin: </strong> <%= origin %> </li>
+    	<br>
+    	<li> <strong>Edible? </strong> <%= isEdible ? "Yes" : "No" %> </li>
+    	<br>
+    	<li> <strong>Good Smells? </strong> <%= smellsPretty ? "Yes" : "No"%> </li>
+    	<br>
+    	<li> <strong>Comments: </strong> <%= comments %> </li>
+    </ul>
+    </div>
+  </script>
+
+	</body>
+
+</html>
+
+
+
+
+
+<!--
+///////////////////////////////////////////////////////////////////
+
+/////////// Notes
+
+
+
+////////////////////////////////////////////////////////////////////
+
+/////////// Snippets
+
+
+
+///////////////////////////////////////////////////////////////////
+-->
