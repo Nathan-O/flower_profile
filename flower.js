@@ -1,6 +1,6 @@
 
-/* call hydra.render() to complete the magic */
-
+/* !!! call *** hydra.render() *** to complete the magic !!! */
+   //            ^ ^ ^ ^ ^ ^ 
 
 
 function Flower(name, color, petals, smellsPretty, origin){
@@ -20,37 +20,39 @@ function Flower(name, color, petals, smellsPretty, origin){
    this.comments = "Wow!! This is one hell of a flower. Don't forget it."
 
     /* Methods */
-   this.sniff = function(){
-       console.log("Sniff Sniff Sniff!");
-   };
-   // Demonstrates use of arguments with methods
-   this.hasGoodSmell = function(answer) {
-       if (answer) {
-           return 'This flower smells amazing!';
-       } else {
-           return 'What a noxious weed!';
-       }
-   };
-   // Demonstrates use of local object variables
-   this.describe = function(answer) {
-       alert("This flower is " + this.color + ".");
-     }
-   /// Demonstrates object to object interaction
-   this.compare =  function(otherFlower) {
-       return("My " + this.color + " flower is much prettier than your " +
-         otherFlower.color + " flower :P");
-   };
-   // render html to website via Underscore
-   this.render = function() {
+    this.render = function() {
       //$('body').append("<p>My pretty flower is " + this.color + " and has " + this.petals + " pristine petals.");
       var flowerTemplate = _.template($('#flower-template').html());
       var flowerHTML = flowerTemplate(this);
       $('#prettyFlowerTime-placeholder').append(flowerHTML);
    };
+
+   // this.sniff = function(){
+   //     console.log("Sniff Sniff Sniff!");
+   // };
+   // Demonstrates use of arguments with methods
+   // this.hasGoodSmell = function(answer) {
+   //     if (answer) {
+   //         return 'This flower smells amazing!';
+   //     } else {
+   //         return 'What a noxious weed!';
+   //     }
+   // };
+   // Demonstrates use of local object variables
+   // this.describe = function(answer) {
+   //     alert("This flower is " + this.color + ".");
+   //   }
+   /// Demonstrates object to object interaction
+   // this.compare =  function(otherFlower) {
+   //     return("My " + this.color + " flower is much prettier than your " +
+   //       otherFlower.color + " flower :P");
+   // };
+   // render html to website via Underscore
+   
    // displays message to console
-   this.giveFlower= function(){
-       console.log("Here's a flower")
-    };
+   // this.giveFlower= function(){
+   //     console.log("Here's a flower")
+   //  };
 }
 
 

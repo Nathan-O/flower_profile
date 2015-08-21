@@ -28,7 +28,6 @@
 		</header>
 		<hr>
 		<div id='prettyFlowerTime-placeholder'>
-			
 		</div>
 		<hr>
 
@@ -38,27 +37,29 @@
 		</footer>
 
 		<script type="text/template" id="flower-template">
-	<div class="prettyFlowerTime">	
-    <img src=<%= urlPic %> /> 
-    <ul>
-    	<li> <strong>Name: </strong> <%= name %> </li>
-    	<br>
-    	<li> <strong>Color: </strong> <%= color %> </li>
-    	<br>
-    	<li> <strong>Petals: </strong> <%= petals %> </li>
-    	<br>
-    	<li> <strong>Leaves: </strong> <%= leafCount %> </li>
-    	<br>
-    	<li> <strong>Origin: </strong> <%= origin %> </li>
-    	<br>
-    	<li> <strong>Edible? </strong> <%= isEdible ? "Yes" : "No" %> </li>
-    	<br>
-    	<li> <strong>Good Smells? </strong> <%= smellsPretty ? "Yes" : "No"%> </li>
-    	<br>
-    	<li> <strong>Comments: </strong> <%= comments %> </li>
-    </ul>
-    </div>
-  </script>
+			<div class="prettyFlowerTime">	
+			    <img src=<%= urlPic %> /> 
+			    <div class="profile">
+				    <ul>
+				    	<li> <strong>Name: </strong> <%= name %> </li>
+				    		<br>
+				    	<li> <strong>Color: </strong> <%= color %> </li>
+				    		<br>
+				    	<li> <strong>Petals: </strong> <%= petals %> </li>
+				    		<br>
+				    	<li> <strong>Leaves: </strong> <%= leafCount %> </li>
+				    		<br>
+				    	<li> <strong>Origin: </strong> <%= origin %> </li>
+				    		<br>
+				    	<li> <strong>Edible? </strong> <%= isEdible ? "Yes" : "No" %> </li>
+				    		<br>
+				    	<li> <strong>Good Smells? </strong> <%= smellsPretty ? "Yes" : "No"%> </li>
+				    		<br>
+				    	<li> <strong>Comments: </strong> <%= comments %> </li>
+				    </ul>
+			    </div>
+		    </div>
+		</script>
 
 	</body>
 
