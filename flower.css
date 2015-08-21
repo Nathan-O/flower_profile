@@ -2,7 +2,7 @@
 	height: 350px;
 	width: 1000px;
 	display: inline-block;
-	border: 3px red dashed;
+	/* border: 3px red dashed; */
 }
 
 .profile { 
@@ -10,7 +10,7 @@
 	margin-top: 22px;
 	margin-left: 70px;
 	float: right;
-	border: 3px blue dashed;
+	/* border: 3px blue dashed; */
 }
 
 h1 {
